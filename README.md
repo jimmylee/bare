@@ -1,18 +1,19 @@
 # Bare
-> Single page application skeleton for production and development in 2015.
+> Single page application skeleton for production and development in 2015 & 2016.
 
-Out of my passion for minimal surface area tools and my desire to become more familiar with new tools, I’ve produced a skeleton for projects that I now use for front end engineering labor in production. These are the notable tools that are used:
+I use this repository to start projects where I want to achieve the smallest filesize footprint possible while using my favorite tools. The notable tools I use are:
 
-* RiotJS
-* Webpack
-* LESS
-* ES6 via Babel
-* ESLint
+* [RiotJS](http://riotjs.com/)
+* [Webpack](https://webpack.github.io/)
+* [LESS](https://github.com/less/less.js)
+* [Babel](https://babeljs.io/)
+* [eslint](http://eslint.org/)
 
-With these tools, my research and this skeleton, I’ve managed to ship products to users while keeping the bundle size under 200kbs before gzip.
+In your projects you will also find it really easy to expand and use different tools.
 
 ##Prerequisites
 * [Node.js](http://nodejs.org/)
+* Please update node if you already have it.
 * Git installed, use 'git --version' to check.
 
 ##Setup Development

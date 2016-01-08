@@ -11,7 +11,7 @@
           content="Web Application">
 
     <meta name="viewport"
-          content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, shrink-to-fit=no">
+          content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
 
     {% if (o.htmlWebpackPlugin.options.production) { %}
     <link rel="stylesheet"
@@ -19,7 +19,7 @@
     {% } %}
 </head>
 <body>
-    <app></app>
+    <main></main>
 {% if (o.htmlWebpackPlugin.options.development) { %}
     <script src="http://localhost:3001/webpack-dev-server.js"></script>
     <script src="http://localhost:3001/dist/app.js"></script>

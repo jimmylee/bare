@@ -1,17 +1,17 @@
-var webpack = require('webpack');
-var crypto = require('crypto');
+var webpack           = require('webpack');
+var crypto            = require('crypto');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var current_date = (new Date()).valueOf().toString();
-var random = Math.random().toString();
-var runtimeSha = crypto.createHash('sha1').update(current_date + random).digest('hex');
+var random       = Math.random().toString();
+var runtimeSha   = crypto.createHash('sha1').update(current_date + random).digest('hex');
 
 module.exports = {
     'development_loader_js': {
         test: /\.js$/,
         loaders: [
-            'babel-loader?cacheDirectory',
+            'babel-loader?cacheDirectory&presets[]=stage-2,presets[]=es2015',
             'eslint-loader'
         ],
         exclude: [/node_modules/]
@@ -20,7 +20,7 @@ module.exports = {
     'production_loader_js': {
         test: /\.js$/,
         loaders: [
-            'babel-loader',
+            'babel-loader?cacheDirectory&presets[]=stage-2,presets[]=es2015',
             'eslint-loader'
         ],
         exclude: [/node_modules/]

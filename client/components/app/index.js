@@ -1,37 +1,23 @@
 import riot from 'riot';
 import styles from './styles.less';
-import dispatcher from 'utilities/dispatcher';
 
 riot.tag(
-    'app',
+    'main',
 
     `
         <div class="{styles.content}"
              onclick="{changeText()}">
-            {currentText}
+            Hello world!<br>
+            <br>
+            Now you can write a web application or website!
         </div>
     `,
 
     function(opts){
-        let app = this;
+        let main = this;
 
-        app.styles = styles;
+        main.styles = styles;
 
-        app.changeText = function(){
-            return function(event){
-                return dispatcher.trigger('change_text');
-            };
-        };
-
-        app.on('mount', function(){
-            dispatcher.trigger('get_text');
-        });
-
-        dispatcher.on('change_text_finished', function(choice){
-            app.currentText = choice;
-            app.update();
-        });
-
-        return app;
+        return main;
     }
 );

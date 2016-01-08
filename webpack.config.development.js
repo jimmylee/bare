@@ -1,10 +1,10 @@
 var config = require('./webpack.config.options.js');
 
 module.exports = {
-    entry: config['development_entry'],
-    output: config['development_output'],
+    entry:   config['development_entry'],
+    output:  config['development_output'],
     resolve: config['resolve'],
-    eslint: config['eslint'],
+    eslint:  config['eslint'],
 
     module: {
         loaders: [
