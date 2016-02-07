@@ -1,42 +1,42 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-        "node": true,
-        "es6": true
-    },
-    "globals": {
-        "PRODUCTION": false,
-        "FileReader": false
-    },
-    "rules": {
-        "semi": [1],
-        "quotes": [1, "single", "avoid-escape"],
-        "camelcase": [2, {"properties": "never"}],
-        "comma-dangle": [1, "never"],
-        "comma-spacing": 1,
-        "curly": [2, "multi-line"],
-        "dot-notation": 0,
-        "eqeqeq": [2, "allow-null"],
-        "guard-for-in": 2,
-        "indent": [1, 4],
-        "key-spacing": 0,
-        "no-bitwise": 2,
-        "no-debugger": 1,
-        "no-trailing-spaces": 1,
-        "no-underscore-dangle": 0,
-        "no-multi-spaces": [1, {"exceptions": {
-            "AssignmentExpression": true,
-            "BinaryExpression": true,
-            "VariableDeclarator": true
-        }}],
-        "no-shadow": 2,
-        "no-unused-vars": [1, {
-            "vars": "all",
-            "args": "none"
-        }],
-        "no-var": 2,
-        "space-infix-ops": 1,
-        "space-unary-ops": 1,
-        "wrap-iife": [2, "inside"]
-    }
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "PRODUCTION": false,
+    "FileReader": false
+  },
+  "rules": {
+    "semi": [1],
+    "quotes": [1, "single", "avoid-escape"],
+    "camelcase": [2, {"properties": "never"}],
+    "comma-dangle": [1, "never"],
+    "comma-spacing": 1,
+    "curly": [2, "multi-line"],
+    "dot-notation": 0,
+    "eqeqeq": [2, "allow-null"],
+    "guard-for-in": 2,
+    "indent": [1, 2],
+    "key-spacing": 0,
+    "no-bitwise": 2,
+    "no-debugger": 1,
+    "no-trailing-spaces": 1,
+    "no-underscore-dangle": 0,
+    "no-multi-spaces": [1, {"exceptions": {
+        "AssignmentExpression": true,
+        "BinaryExpression": true,
+        "VariableDeclarator": true
+    }}],
+    "no-shadow": 2,
+    "no-unused-vars": [1, {
+        "vars": "all",
+        "args": "none"
+    }],
+    "no-var": 2,
+    "space-infix-ops": 1,
+    "space-unary-ops": 1,
+    "wrap-iife": [2, "inside"]
+  }
 }

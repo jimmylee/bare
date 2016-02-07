@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="canonicalURL" content="">
+  <meta name="robots" content=""/>
+
+  <link rel="canonical" href="" />
+  <link rel="next" href="" />
+  <link rel="publisher" href=""/>
+
+  <title>Lorem Ipsum</title>
+  <meta property="og:title" content="" />
+  <meta name="twitter:title" content="" />
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+  <meta name="twitter:description" content="" />
+
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:image" content="" />
+
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:image" content="" />
+
+  <meta name="sourceApp" content="mobileWeb">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+  <link rel="icon" href="" sizes="32x32" />
+  <link rel="icon" href="" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="" />
+  <meta name="msapplication-TileImage" content="" />
+
+  <meta name="theme-color" content="#000000">
+<% if (htmlWebpackPlugin.options.production) { %>
+  <link rel="stylesheet" href="/app.css?sha=<%= htmlWebpackPlugin.options.sha %>">
+<% } %>
+</head>
+<body>
+  <main/>
+<% if (htmlWebpackPlugin.options.development) { %>
+  <script src="http://localhost:3001/webpack-dev-server.js"></script>
+  <script src="http://localhost:3001/dist/app.js"></script>
+<% } %>
+<% if (htmlWebpackPlugin.options.production) { %>
+  <script src="/app.js?sha=<%= htmlWebpackPlugin.options.sha %>"></script>
+<% } %>
+</body>
+</html>
