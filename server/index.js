@@ -1,13 +1,15 @@
-var express          = require('express');
-var path             = require('path');
-var httpProxy        = require('http-proxy');
-var app              = express();
-var isProduction     = process.env.NODE_ENV === 'production';
-var port             = isProduction ? process.env.PORT : 3000;
-var publicPath       = path.resolve(__dirname, '..', 'dist');
-var webpack          = require('webpack');
+var express = require('express');
+var path = require('path');
+var httpProxy = require('http-proxy');
+
+var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
-var webpackConfig    = require('./../webpack.development.config.js');
+var webpackConfig = require('./../webpack.development.config.js');
+
+var app = express();
+var isProduction = process.env.NODE_ENV === 'production';
+var port = isProduction ? process.env.PORT : 3000;
+var publicPath = path.resolve(__dirname, '..', 'dist');
 
 var proxy = httpProxy.createProxyServer({
   changeOrigin: true

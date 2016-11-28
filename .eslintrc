@@ -30,10 +30,6 @@
         "VariableDeclarator": true
     }}],
     "no-shadow": 2,
-    "no-unused-vars": [1, {
-        "vars": "all",
-        "args": "none"
-    }],
     "no-var": 2,
     "space-infix-ops": 1,
     "space-unary-ops": 1,

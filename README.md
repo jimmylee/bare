@@ -1,16 +1,14 @@
 # Bare
 > Single page application skeleton for production and development in 2015 & 2016.
 
-I use this repository to start projects where I want to achieve the smallest filesize footprint possible while using my favorite tools. The notable tools I use are:
+I use this repository to start projects where I want to achieve a small filesize footprint while using popular tools.
 
-* [RiotJS](http://riotjs.com/)
+* [Preact](http://preactjs.com/)
 * [Webpack](https://webpack.github.io/)
 * [LESS](https://github.com/less/less.js)
 * [Babel](https://babeljs.io/)
 * [Eslint](http://eslint.org/)
 * [PostCSS](https://github.com/postcss/postcss)
-
-In your projects you will also find it really easy to expand and use different tools. You could also just use [React](https://facebook.github.io/react/) or [Preact](https://github.com/developit/preact) like everyone will tell you to do.
 
 ##Prerequisites
 * [Node.js](http://nodejs.org/)
@@ -37,10 +35,10 @@ View **localhost:3000** in your browser. You can use this when you're deploying 
 npm run production
 ```
 
-View /dist folder using finder or command line. Here are the sizes for the production build:
+View /dist folder using finder or command line. Here is what you start out with.
 
 ```sh
-app.js - 22.5kb
+app.js - 10.8kb
 app.css - 119 bytes
 ```
 
