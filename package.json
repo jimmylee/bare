@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run link; node server",
-    "link": "rm -f ./node_modules/components; rm -f ./node_modules/constants; rm -f ./node_modules/stores; rm -f ./node_modules/utilities; ln -s ../client/components ./node_modules/components; ln -s ../client/constants ./node_modules/constants; ln -s ../client/stores ./node_modules/stores; ln -s ../client/utilities ./node_modules/utilities;",
+    "link": "rm -f ./node_modules/components; rm -f ./node_modules/common; ln -s ../client/components ./node_modules/components; ln -s ../client/common ./node_modules/common;",
     "production": "rm -rf ./dist; npm run link; NODE_ENV=production webpack --config webpack.production.config.js;",
     "deploy": "rm -rf ./dist; npm run link; npm run production; PORT=3000 NODE_ENV=production node server;"
   },

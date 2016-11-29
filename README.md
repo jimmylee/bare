@@ -38,8 +38,8 @@ npm run production
 View /dist folder using finder or command line. Here is what you start out with.
 
 ```sh
-app.js - 10.8kb
-app.css - 119 bytes
+app.js - 11.5kb
+app.css - 810 bytes
 ```
 
 You could probably gzip `app.js` for more savings.
