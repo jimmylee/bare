@@ -2,7 +2,7 @@
   "name": "bare",
   "version": "0.0.1",
   "description": "Single page application skeleton for production and development in 2015 & 2016",
-  "homepage": "https://github.com/meanJim/bare#readme",
+  "homepage": "https://github.com/jimmylee/bare#readme",
   "license": "MIT",
   "scripts": {
     "start": "npm run link; node server",
@@ -22,11 +22,11 @@
     "demo"
   ],
   "bugs": {
-    "url": "https://github.com/meanJim/bare/issues"
+    "url": "https://github.com/jimmylee/bare/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meanJim/bare.git"
+    "url": "git+https://github.com/jimmylee/bare.git"
   },
   "author": {
     "email": "jimmy-lee@live.com",
