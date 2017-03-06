@@ -1,7 +1,10 @@
 import Preact from 'preact';
 import styles from './styles.less';
 
-/** @jsx Preact.h */
+// NOTE: This is an example canvas animation you can obviously delete and replace
+// with something of your own!
+import { animateExample } from 'client/common/example';
+
 export default class App extends Preact.Component {
   _canvas;
 
@@ -14,7 +17,7 @@ export default class App extends Preact.Component {
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
 
-    ctx.fillRect(100, 100, 100, 100);
+    animateExample(ctx);
   }
 
   componentDidMount() {
