@@ -10,12 +10,12 @@ I use this repository to start projects where I want to achieve a small filesize
 * [Eslint](http://eslint.org/)
 * [PostCSS](https://github.com/postcss/postcss)
 
-##Prerequisites
+## Prerequisites
 * [Node.js](http://nodejs.org/)
 * Please update node if you already have it.
 * Git installed, use 'git --version' to check.
 
-##Setup Development
+## Setup Development
 ```sh
 git clone https://github.com/meanJim/bare.git && cd bare && npm install
 npm start
@@ -23,14 +23,14 @@ npm start
 
 View **localhost:3001** in your browser. Now you have development with hot loading and autoprefixing.
 
-##Run Production
+## Run Production
 ```sh
 npm run deploy
 ```
 
 View **localhost:3000** in your browser. You can use this when you're deploying on some box somewhere.
 
-##Just Build Production Assets
+## Just Build Production Assets
 ```sh
 npm run production
 ```
